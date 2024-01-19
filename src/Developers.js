@@ -79,7 +79,7 @@ export default function Developers({devs, date}) {
           </TableRow> */}
           <TableRow>
             <TableCell>Developers</TableCell>
-              {/*<TableCell align="center">Review Captain</TableCell >*/}
+              <TableCell align="center">Crash Checker</TableCell >
             <TableCell align="center">PR Police</TableCell>
               {/*<TableCell align="center">Standup Master</TableCell>*/}
           </TableRow>
@@ -93,7 +93,7 @@ export default function Developers({devs, date}) {
               <TableCell component="th" scope="row">
                 {dev}
               </TableCell>
-                {/*<TableCell align="center">{dev === captain && <ReviewCaptainEmoji/>}</TableCell>*/}
+                <TableCell align="center">{dev === captain && <ReviewCaptainEmoji/>}</TableCell>
               <TableCell align="center">{dev === police && <PRPoliceEmoji/>}</TableCell>
                 {/*<TableCell align="center">{dev === standup && <StandupMasterEmoji/>}</TableCell>*/}
             </TableRow>
