@@ -1,3 +1,3 @@
-# eCare Android
+# Android Calender based on @kihaki
 
-eCare Android jobs calendar
+Used for Gematik Android pull request reviews

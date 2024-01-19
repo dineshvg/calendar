@@ -7,13 +7,13 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-const monthLenghts = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+const monthLengths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 const startDayOfThreeWeekSprints = 19
 const devIndexOnStartOfThreeWeeksSprint = 0
 
 function daysSinceStartOfYear(date) {
-  return monthLenghts.slice(0, date.getMonth()).reduce(
+  return monthLengths.slice(0, date.getMonth()).reduce(
     ( accumulator, currentValue ) => accumulator + currentValue,
     0
   ) + date.getDate()
@@ -79,9 +79,9 @@ export default function Developers({devs, date}) {
           </TableRow> */}
           <TableRow>
             <TableCell>Developers</TableCell>
-            <TableCell align="center">Review Captain</TableCell>
+              {/*<TableCell align="center">Review Captain</TableCell >*/}
             <TableCell align="center">PR Police</TableCell>
-            <TableCell align="center">Standup Master</TableCell>
+              {/*<TableCell align="center">Standup Master</TableCell>*/}
           </TableRow>
         </TableHead>
         <TableBody>
@@ -93,9 +93,9 @@ export default function Developers({devs, date}) {
               <TableCell component="th" scope="row">
                 {dev}
               </TableCell>
-              <TableCell align="center">{dev == captain && <ReviewCaptainEmoji/>}</TableCell>
-              <TableCell align="center">{dev == police && <PRPoliceEmoji/>}</TableCell>
-              <TableCell align="center">{dev == standup && <StandupMasterEmoji/>}</TableCell>
+                {/*<TableCell align="center">{dev === captain && <ReviewCaptainEmoji/>}</TableCell>*/}
+              <TableCell align="center">{dev === police && <PRPoliceEmoji/>}</TableCell>
+                {/*<TableCell align="center">{dev === standup && <StandupMasterEmoji/>}</TableCell>*/}
             </TableRow>
           ))}
         </TableBody>
